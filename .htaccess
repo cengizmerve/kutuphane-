@@ -1,0 +1,59 @@
+RewriteEngine On
+
+RewriteRule ^account/login$ /islem.php?query=login [L]
+RewriteRule ^account/logout$ /islem.php?query=logout [L]
+RewriteRule ^acoount/loginn$ /islem.php?query=loginn [L]
+RewriteRule ^login/error$ /index.php?hata [L]
+RewriteRule ^ogrenci/kaydet$ /islem.php?query=ogrencikaydet [L]
+RewriteRule ^ogretmen/kaydet$ /islem.php?query=ogretmenkaydet [L]
+RewriteRule ^program/kaydet$ /islem.php?query=programkaydet [L]
+RewriteRule ^donem/kaydet$ /islem.php?query=donemkaydet [L]
+RewriteRule ^seviye/kaydet$ /islem.php?query=seviyekaydet [L]
+RewriteRule ^kitap/ayirtma$ /islem.php?query=kitapayirtma [L]
+RewriteRule ^uye/ol$ /islem.php?query=uyeol [L]
+RewriteRule ^uye/sil$ /islem.php?query=uyesil [L]
+RewriteRule ^kitap/ekle$ /islem.php?query=kitapekle [L]
+
+
+
+RewriteRule ^api/sinifgetir/([^/]*)/([^/]*)/([^/]*)$ /islem.php?query=apisinifgetir&donem=$1&program=$2&seviye=$3 [L]
+
+RewriteRule ^dashboard$ /home.php [L]
+RewriteRule ^index$ /index.php [L]
+RewriteRule ^login$ /login.php [L]
+RewriteRule ^uyeekrani$ /uyeekrani.php [L]
+RewriteRule ^loginn$ /loginuye.php [L]
+RewriteRule ^kitapayirtma$ /kitapayirtma.php [L]
+RewriteRule ^uyeol$ /uyeol.php [L]
+RewriteRule ^kitapistek$ /kitapistek.php [L]
+RewriteRule ^istek$ /istek.php [L]
+RewriteRule ^kitapyorumlari$ /kitapyorumlari.php [L]
+RewriteRule ^kitappuanlama$ /kitappuanlama.php [L]
+RewriteRule ^seviyeler$ /seviyeler.php [L]
+RewriteRule ^kitap/ayirtma$ /kitapayirtma.php [L]
+RewriteRule ^kitaplar$ /kitaplar.php [L]
+RewriteRule ^kitaplarr$ /kitaplarr.php [L]
+RewriteRule ^uyeler$ /uyeler.php [L]
+RewriteRule ^kitapteslimekle$ /kitapteslimekle.php [L]
+RewriteRule ^iletisim$ /iletisim.php [L]
+RewriteRule ^yoltarifi$ /yoltarifi.php [L]
+RewriteRule ^uyeiletisim$ /uyeiletisim.php [L]
+RewriteRule ^uyeyoltarifi$ /uyeyoltarifi.php [L]
+RewriteRule ^anaekrankitaplar$ /anaekrankitaplar.php [L]
+RewriteRule ^ekitap$ /ekitap.php [L]
+
+
+
+
+
+RewriteRule ^uyeol$ /uyeol.php [L]
+RewriteRule ^uyesil$ /uyesil.php [L]
+RewriteRule ^sorumlutanimlama$ /sorumlutanimlama.php [L]
+RewriteRule ^kitapekle$ /kitapekle.php [L]
+RewriteRule ^kitap/ekle$ /kitapekle.php [L]
+
+
+
+
+RewriteRule ^kitap/duzenle/([^/]*)$ /kitapduzenle.php?id=$1 [L]
+RewriteRule ^uye/sil/([^/]*)$ /islem.php?query=uyesil&id=$1 [L]
